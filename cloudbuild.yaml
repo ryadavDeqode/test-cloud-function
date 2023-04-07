@@ -4,7 +4,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - helloPubSub
+  - test-cloud-func
   - --region=us-central1
   - --source=.
   - --trigger-http
