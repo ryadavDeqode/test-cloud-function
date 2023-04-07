@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'FUNCTION_NAME', '--runtime', 'RUNTIME', '--trigger-http', '--entry-point', 'ENTRY_POINT', '--source', 'SOURCE', '--memory', '256MB', '--timeout', '60s', '--region', 'us-central1', '--allow-unauthenticated']
+  args: ['functions', 'deploy', 'helloPubSub', '--runtime', 'RUNTIME', '--trigger-http', '--entry-point', 'ENTRY_POINT', '--source', 'SOURCE', '--memory', '256MB', '--timeout', '60s', '--region', 'us-central1', '--allow-unauthenticated']
   env:
   - 'GOOGLE_CLOUD_PROJECT=$PROJECT_ID'
   - 'FUNCTION_NAME=helloPubSub'
